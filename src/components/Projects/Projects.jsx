@@ -46,14 +46,16 @@ const Projects = () => {
                         <p>
                           {info || ''}
                         </p>
-                        <p className="mb-4">{info2 || ''}<b>Tech Stack</b></p>
-                        <h1><big>
-                        <span class="glyph-sample"><i class={`icon-${tech1}` || ''}/></span> &nbsp;&nbsp;
-                        <span class="glyph-sample"><i class={`icon-${tech2}` || ''}/></span> &nbsp;&nbsp;
-                        <span class="glyph-sample"><i class={`icon-${tech3}` || ''}/></span> &nbsp;&nbsp;
-                        <span class="glyph-sample"><i class={`icon-${tech4}` || ''}/></span>
-
-                        </big></h1>
+                        <p className="mb-4">{info2 || ''} <b>Tech Stack</b>
+                          </p>
+                        <h1>
+                          <big>
+                            <span class="glyph-sample"><i class={`icon-${tech1}` || ''}/></span> &nbsp;&nbsp;
+                            <span class="glyph-sample"><i class={`icon-${tech2}` || ''}/></span> &nbsp;&nbsp;
+                            <span class="glyph-sample"><i class={`icon-${tech3}` || ''}/></span> &nbsp;&nbsp;
+                            <span class="glyph-sample"><i class={`icon-${tech4}` || ''}/></span>
+                          </big>
+                        </h1>
                       </div>
                       {url && (
                         <a

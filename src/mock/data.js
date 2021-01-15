@@ -33,7 +33,7 @@ export const projectsData = [
     info: 'This is an IoT based health monitoring and cloud medical record keeping system. It can be used to store and retrieve uniquely identified medical records remotely and also a host of personal fitness tracking features like calorie counter, sleep and exercise tracker, medicine reminder and more.',
     info2: '',
     tech1: 'reactjs',
-    tech2: 'java-bold',
+    tech2: 'java',
     tech3: 'npm',
     tech4: 'javascript',
     url: '',
