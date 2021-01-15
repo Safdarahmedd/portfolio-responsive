@@ -20,7 +20,8 @@ export default function HTML({
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {headComponents}
-        <link rel="stylesheet" href="/icons/font-mfizz/font-mfizz.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" integrity="sha512-Cdvnk1SFWqcb3An6gMyqDRH40Js8qmsWcSK10I2gSifCe2LilaPMsHd6DldEvQ3uIlCb1qdRUrNeAFFleOu4xQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" integrity="sha512-VS1RXkzMIU86cRtBiX+9bJf91xFfORQeKg3dq9LwJO4ZsQ+tg427we+xLTKUcHMytW9ZzUpMc8Hje3sKEFqekA==" crossorigin="anonymous" />
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}
