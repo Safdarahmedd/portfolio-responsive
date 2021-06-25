@@ -28,7 +28,22 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, tech1, tech2, tech3, tech4, id } = project;
+            const {
+              title,
+              info,
+              info2,
+              url,
+              repo,
+              img,
+              tech1,
+              tech2,
+              tech3,
+              tech4,
+              altech1,
+              altech2,
+              altech3,
+              id,
+            } = project;
 
             return (
               <Row key={id}>
@@ -43,29 +58,65 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info || ''}
+                        <p>{info || ''}</p>
+                        <p className="mb-4">
+                          {info2 || ''} <b>Tech Stack</b>
                         </p>
-                        <p className="mb-4">{info2 || ''} <b>Tech Stack</b>
-                          </p>
                         <h1>
                           <big>
-                            <span class="glyph-sample"><i class={`icon-${tech1}` || ''}/></span> &nbsp;&nbsp;
-                            <span class="glyph-sample"><i class={`icon-${tech2}` || ''}/></span> &nbsp;&nbsp;
-                            <span class="glyph-sample"><i class={`icon-${tech3}` || ''}/></span> &nbsp;&nbsp;
-                            <span class="glyph-sample"><i class={`icon-${tech4}` || ''}/></span>
+                            {tech1 && (
+                              <span className="glyph-sample">
+                                <i className={`icon-${tech1}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {tech2 && (
+                              <span className="glyph-sample">
+                                <i className={`icon-${tech2}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {tech3 && (
+                              <span className="glyph-sample">
+                                <i className={`icon-${tech3}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {tech4 && (
+                              <span className="glyph-sample">
+                                <i className={`icon-${tech4}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {altech1 && (
+                              <span className="glyph-sample">
+                                <i className={`${altech1}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {altech2 && (
+                              <span className="glyph-sample">
+                                <i className={`${altech2}`} />
+                                &nbsp;&nbsp;
+                              </span>
+                            )}
+                            {altech3 && (
+                              <span className="glyph-sample">
+                                <i className={`${altech3}`} />
+                              </span>
+                            )}
                           </big>
                         </h1>
                       </div>
                       {url && (
                         <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url}
                         >
-                        See Live
-                      </a>
+                          See Live
+                        </a>
                       )}
 
                       {repo && (
