@@ -37,9 +37,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Safdar Ahmed
-        </p>
+        <p className="footer__text">© {new Date().getFullYear()} - Safdar Ahmed</p>
 
         {isEnabled && <GithubButtons />}
       </Container>

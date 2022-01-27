@@ -29,6 +29,23 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'medichain.jpg',
+    title: 'Medi-Chain',
+    info:
+      'This project is a Decentralised Application built on the Ethereum Blockchain for secure storage of Electronic Medical Records. Patients can allow and revoke access to their medical history to their physicians. Anonymised diagnosis information is streamed to a Google Big Query Table and visualised with Tableau allowing real-time disease tracking.',
+    info2: '',
+    tech1: 'reactjs',
+    tech2: 'google-developers',
+    tech3: 'database-alt2',
+    tech4: '',
+    altech1: 'fab fa-ethereum',
+    altech2: '',
+    altech3: '',
+    url: '',
+    repo: 'https://github.com/Safdarahmedd/medichain', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'easymandi.jpg',
     title: 'Easy Mandi',
     info:
@@ -94,23 +111,6 @@ export const projectsData = [
     altech3: '',
     url: '',
     repo: 'https://github.com/Safdarahmedd/portfolio-project', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'cppkart.jpg',
-    title: 'Cpp Kart',
-    info:
-      'Built a functional solution using the C++ language. I developed an e-commerce platform complete with a GUI, user login, product categories, and product ratings implemented with various libraries and file pointers.',
-    info2: '',
-    tech1: 'cplusplus',
-    tech2: '',
-    tech3: '',
-    tech4: '',
-    altech1: '',
-    altech2: '',
-    altech3: '',
-    url: '',
-    repo: 'https://github.com/Safdarahmedd/cppkart', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
